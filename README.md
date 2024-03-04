@@ -15,7 +15,9 @@ Currently, it does the following:
 # Syntax
 
 Pull latest from GitHub release page:
+
 `python xbe2bin.py`
 
 Use local file instead:
+
 `python xbe2bin.py firmware.xbe`
