@@ -95,4 +95,4 @@ if (xbe_bytes[0:4] == 'XBEH'.encode()):
     else:
         print("ERROR: Length of STM32 may be truncated. Does not appear to be 0xD000 bytes long.")
 else:
-    print("ERROR: " + sys.argv[1] + " does note appear to be valid Xbox Executable")
+    print("ERROR: " + sys.argv[1] + " does not appear to be valid Xbox Executable")
