@@ -38,10 +38,14 @@ ver_string = ''
 tag_name = ''
 
 # use an XBE as a param instead of downloading from github
-if len(sys.argv) > 1:
+if len(sys.argv) == 2:
     print("Reading xbe from file")
-    firmware['file'] = sys.argv[1]
-    bootloader['file'] = sys.argv[2]
+    bootloader['file'] = sys.argv[1]
+    firmware['file'] = sys.argv[2]
+
+elif len(sys.argv) != 0 and len(sys.argv) != 2:
+    print("Syntax:\n\tpython xbe2bin.py\nor\n\tpython xbe2bin.py upgrade.xbe firmware.xbe")
+    sys.exit(0)
 
 # pull the latest release from github, extract, and find the right files
 else:
